@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 @import "tailwindcss";
 *{margin: 0px;
   padding: 0px;
  
 }
-/* Media queries 
+/* Media queries  */
 @media(min-width: 1300px) {
   .container , .container-lg, .container-md, .container-sm , .container-xl {
     max-width: 1200px ;
   }
-}*/
+}
 
 body{
   font-family: 'Lato', sans-serif;
@@ -18,9 +17,7 @@ body{
 .container{
   max-width: 90%;
 }
-/* nav .container{
-  max-width: 90%;
-} */
+
 
 .bg-green{
   background-color: #75bb75;
@@ -152,7 +149,9 @@ header .part3 .circle svg{
 nav .allCartTab{
   background: #2bbef9 ;
   padding: 8px 30px ;
+  
   border-radius: 30px ;
+
   
 }
 nav .allCartTab *{
@@ -163,6 +162,36 @@ nav .allCartTab:hover{
 }
 nav .allCartTab .text {
   font-weight: 600;
+}
+
+nav .allCartTab .icon1 svg{
+  font-size: 20px;
+  margin-right: 10px;
+}
+nav .allCartTab .icon2 svg{
+  font-size: 15px;
+  margin-left: 10px;
+}
+nav .navPart2 ul {
+  margin-bottom: 0px;
+
+}
+nav a.navlink {
+font-size: 16px;
+font-weight: 600;
+text-decoration: none;
+color: rgba(0, 0, 0, 0.7);
+text-transform: uppercase;
+display:flex;
+align-items: center;
+padding: 10px 20px;
+transition: all 0.2s ease-in-out;
+border-radius: 25px;
+}
+
+nav a.navlink:hover{
+  background: #f0faff;
+  color: #2bbef9;
 }
 
 
