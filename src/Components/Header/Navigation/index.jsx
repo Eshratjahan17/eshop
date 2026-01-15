@@ -17,15 +17,16 @@ const Navigation = () => {
                         </Button>
                     </div>
         
-                    <div className=':w-full  navpart2'>
-                        <ul className='flex justify-end items-center'>
-                            <li><Link className='navlink' to="/">Home</Link></li>
-                            <li><Link className='navlink' to="/">Fashion</Link></li>
-                            <li><Link className='navlink' to="/">Electronic</Link></li>                   
-                            <li><Link  className='navlink'to="/">Bakery</Link></li>
-                            <li><Link className='navlink'to="/">Grocery</Link></li>
-                            <li><Link className='navlink'to="/">Blog</Link></li>
-                            <li><Link className='navlink' to="/">Contact Us</Link></li>
+                    <div className='w-2/3  navpart2'>
+                        <ul className='flex justify-start items-center'>
+                            <li><Button><Link className='navlink' to="/">Home</Link></Button></li>
+                            <li><Button><Link className='navlink' to="/">Fashion</Link></Button></li>
+                            <li><Button><Link className='navlink' to="/">Electronic</Link></Button></li>                   
+                            <li><Button><Link  className='navlink'to="/">Bakery</Link></Button></li>
+                            <li><Button><Link className='navlink'to="/">Grocery</Link></Button></li>
+                            <li><Button><Link className='navlink'to="/">Blog</Link></Button></li>
+                            <li><Button><Link className='navlink' to="/">Contact Us</Link></Button></li>
+                        
 
 
                             
