@@ -6,11 +6,14 @@ import { LuUser } from "react-icons/lu";
 import { BsCart2 } from "react-icons/bs";
 import SearchBox from './SearchBox';
 import Navigation from './Navigation';
+import { useContext } from 'react';
+import { MyContext } from '../../App';
 
 
 
 
 const Header = () => {
+    const context=useContext(MyContext);
     return  <div className="headerWrapper">
     <div className="top-strip bg-green-800 ">
         <div className="container">
@@ -26,7 +29,10 @@ const Header = () => {
                    <Link  to ={'/'}><img src={Logo} alt="logo" /></Link>
                 </div>
                 <div className='sm:w-5/6 flex items-center part2 '>
-                <CountryDropDown />
+                {
+                    context.countryList.length !==0 &&  <CountryDropDown />
+                }
+               
                 <SearchBox/>
         
                 <div className='part3 flex items-center gap-4'>

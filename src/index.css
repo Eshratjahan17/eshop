@@ -232,8 +232,19 @@ nav a.navlink:hover{
   color: #000;
   justify-content: flex-start;
   padding: 10px 5px;
-
-
+}
+.locationModal .countryList li button{
+  width: 100%;
+  text-transform: capitalize;
+  color: #000;
+  justify-content: flex-start;
+  padding: 10px 5px;
+}
+.locationModal .countryList li button:hover{
+  background: #f1f1f1;
+}
+.locationModal .countryList li button:active{
+  background: #e2e2e2;
 }
 .locationModal .close_button{
   position: absolute;
