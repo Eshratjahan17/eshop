@@ -3,6 +3,8 @@ import { MdMenu } from "react-icons/md";
 import { FaAngleDown } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { use, useState } from 'react';
+import { FaAngleRight } from "react-icons/fa6";
+
 
 
 
@@ -22,8 +24,28 @@ const Navigation = () => {
                         </Button>
                         <div className={`sidebarNav shadow-xl ${isopenSidebarVal=== true? 'open': ''}`}>
                         <ul>
-                        <li><Link className='navlink' to="/"><Button>Men</Button></Link></li>  
-                        <li><Link className='navlink' to="/"><Button>Women</Button></Link></li>  
+                        <li><Link className='navlink' to="/"><Button>Men <FaAngleRight className='angle_icon' ></FaAngleRight></Button></Link>
+                        <div className='submenu'>
+
+                                        <Link className='navlink' to="/"><Button>Clothing</Button></Link>
+                                          <Link className='navlink' to="/"><Button>Footwear</Button></Link>
+                                          <Link className='navlink' to="/"><Button>Watches</Button></Link> 
+                                          <Link className='navlink' to="/"><Button>Clothing</Button></Link>
+                                          <Link className='navlink' to="/"><Button>Footwear</Button></Link>
+                                          <Link className='navlink' to="/"><Button>Watches</Button></Link>   
+                        </div>
+                        
+                        </li>  
+                        <li><Link className='navlink' to="/"><Button>Women <FaAngleRight className='angle_icon' ></FaAngleRight></Button></Link>
+                        <div className='submenu'>
+
+                                        <Link className='navlink' to="/"><Button>Clothing</Button></Link>
+                                          <Link className='navlink' to="/"><Button>Footwear</Button></Link>
+                                          <Link className='navlink' to="/"><Button>Watches</Button></Link> 
+                                          <Link className='navlink' to="/"><Button>Clothing</Button></Link>
+                                          <Link className='navlink' to="/"><Button>Footwear</Button></Link>
+                                          <Link className='navlink' to="/"><Button>Watches</Button></Link>   
+                        </div></li>  
                         <li><Link className='navlink' to="/"><Button>Beauty</Button></Link></li>  
                         <li><Link className='navlink' to="/"><Button>Watches</Button></Link></li>  
                         <li><Link className='navlink' to="/"><Button>Kids</Button></Link></li>  
