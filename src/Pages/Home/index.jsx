@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import Rating from '@mui/material/Rating';
 import { Navigation } from 'swiper/modules';
+import ProductItem from "../../Components/ProductItem/ProductItem";
 
 const Home = () => {
   
@@ -25,7 +26,7 @@ const Home = () => {
                       <div className="flex items-center">
                         <div className="info">
                             <h3 className="mb-0 hd">BEST SELLERS</h3>
-                            <p className="text-light text-sml">Do not miss the current offers until the end of March.
+                            <p className="text-light text-sml ">Do not miss the current offers until the end of March.
 
                             </p>
                            
@@ -38,45 +39,34 @@ const Home = () => {
                       <div className="product_row  mt-4">
                      
                     <Swiper slidesPerView={4}
-                    spaceBetween={30}
+                    spaceBetween={0}
                     pagination={{clickable:true}}
                     navigation={true} modules={[Navigation]} className="mySwiper">
                          
-                            <SwiperSlide><div className="item productItem">
-                               <div className="imgWrapper">
-                                <img src="https://api.spicezgold.com/download/file_1734529297930_fiorra-women-s-teapot-blue-pure-cotton-a-line-kurta-with-sharara-and-dupatta-product-images-rvo9n8udfg-1-202307260626.jpg" alt=""  />
-                               
-                               </div>
-                               <h4>A-Line Kurti With Sharara & Dupatta</h4>
-                               <span className="">In Stock</span>
-                               <Rating name="read-only" value={5} readOnly />
-                               
-                            </div></SwiperSlide>
-                          <SwiperSlide><div className="item productItem">
-                               <div className="imgWrapper">
-                                <img src="https://api.spicezgold.com/download/file_1734529297930_fiorra-women-s-teapot-blue-pure-cotton-a-line-kurta-with-sharara-and-dupatta-product-images-rvo9n8udfg-1-202307260626.jpg" alt="" />
-                               </div>
-                            </div></SwiperSlide>
-                            <SwiperSlide><div className="item productItem">
-                               <div className="imgWrapper">
-                                <img src="https://api.spicezgold.com/download/file_1734529297930_fiorra-women-s-teapot-blue-pure-cotton-a-line-kurta-with-sharara-and-dupatta-product-images-rvo9n8udfg-1-202307260626.jpg" alt=""  />
-                               </div>
-                            </div></SwiperSlide>
-                            <SwiperSlide><div className="item productItem">
-                               <div className="imgWrapper">
-                                <img src="https://api.spicezgold.com/download/file_1734529297930_fiorra-women-s-teapot-blue-pure-cotton-a-line-kurta-with-sharara-and-dupatta-product-images-rvo9n8udfg-1-202307260626.jpg" alt="" />
-                               </div>
-                            </div></SwiperSlide>
-                            <SwiperSlide><div className="item productItem">
-                               <div className="imgWrapper">
-                                <img src="https://api.spicezgold.com/download/file_1734529297930_fiorra-women-s-teapot-blue-pure-cotton-a-line-kurta-with-sharara-and-dupatta-product-images-rvo9n8udfg-1-202307260626.jpg" alt="" />
-                               </div>
-                            </div></SwiperSlide>
-                            <SwiperSlide><div className="item productItem">
-                               <div className="imgWrapper">
-                                <img src="https://api.spicezgold.com/download/file_1734529297930_fiorra-women-s-teapot-blue-pure-cotton-a-line-kurta-with-sharara-and-dupatta-product-images-rvo9n8udfg-1-202307260626.jpg" alt=""  />
-                               </div>
-                            </div></SwiperSlide>
+                            <SwiperSlide>
+                                
+                               <ProductItem></ProductItem>
+                            
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <ProductItem></ProductItem>
+                            
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <ProductItem></ProductItem>
+                            </SwiperSlide>
+                            
+                            <SwiperSlide>
+                            <ProductItem></ProductItem>
+                            
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <ProductItem></ProductItem>
+                            
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <ProductItem></ProductItem>
+                            </SwiperSlide>
                            
                            
                          </Swiper>
