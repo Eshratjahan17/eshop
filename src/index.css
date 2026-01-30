@@ -2,6 +2,13 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
 @import "tailwindcss";
+@layer base {
+  
+  h4 { @apply text-xl font-medium; }
+  h3 { @apply text-2xl font-semibold; }
+
+ 
+}
 
 *{margin: 0px;
   padding: 0px;
@@ -424,10 +431,18 @@ right: 40px ;
   width: 100%;
   border-radius: 7px;
   overflow: hidden;
+  margin-top: 15px;
 }
 .productRow .hd{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
+  margin-top: 70px;
+}
+.hd{
+  font-size: 20px;
+  font-weight: 600;
+ margin-bottom: 15px;
+
 }
 .productRow p{
   margin-bottom: 25px;
@@ -543,4 +558,25 @@ text-decoration: line-through;
 }
 .product_row .swiper-slide:last-child .productItem {
   border-right: 1px;
+}
+.homeCat{
+  padding: 35px 44px;
+}
+.homeCat .swiper .item {
+  padding: 15px;
+  width: 100%;
+  height: auto;
+ 
+  border-radius: 10px;
+}
+.homeCat .swiper .item img{
+  width: 50%;
+}
+.homeCat .swiper .item h4{
+  font-size: 16px;
+  padding: 10px 0px;
+}
+
+.homeCat .swiper{
+  padding-bottom: 40px;
 }
