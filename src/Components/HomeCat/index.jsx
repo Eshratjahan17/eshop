@@ -39,7 +39,7 @@ const HomeCat =()=>{
              {
                 itemBg?.map((item,index)=>{
                     return <SwiperSlide>
-       <div className="item text-center cursor-auto" style={{background:item}}>
+       <div className="item text-center cursor-pointer" style={{background:item}}>
         <img src="https://api.spicezgold.com/download/file_1734525204708_fash.png" alt="" />
         <h4>Cloths</h4>
         </div>
