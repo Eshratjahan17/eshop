@@ -3,6 +3,8 @@ import { BrowserRouter, Route,Routes} from 'react-router-dom'
 import Header from './Components/Header'
 import Home from './Pages/Home'
 import axios from 'axios'
+import Footer from './Components/Footer'
+
 const MyContext = createContext();
 
 function App() {
@@ -37,6 +39,7 @@ selectedCountry
     <Route path='/'exact={true} element={<Home />} />
   
    </Routes>
+   <Footer></Footer>
 </MyContext.Provider>
     </BrowserRouter>
   )
